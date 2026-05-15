@@ -1,0 +1,9 @@
+[project]
+name = "aws-event-driven-finops-platform"
+version = "0.1.0"
+description = "Event-driven AWS banking platform simulation with FinOps-aware service selection."
+requires-python = ">=3.11"
+authors = [{name = "Fernando Francisco Azevedo"}]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
