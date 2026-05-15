@@ -29,6 +29,8 @@ The fictional platform models a banking event mesh with events such as:
 - Documents event contracts and ADRs.
 - Includes tests for decision logic.
 - Uses CI and GitFlow-compatible contribution guidance.
+- Includes a static frontend in `frontend/` ready for Vercel deployment.
+- Automates CodeQL, Trivy, Gitleaks, dependency review and package audits.
 
 ## Run locally
 
@@ -36,3 +38,18 @@ The fictional platform models a banking event mesh with events such as:
 python -m pip install -e . pytest
 pytest -q
 ```
+
+## Frontend
+
+```bash
+cd frontend
+npm ci
+npm run lint
+npm run build
+```
+
+The frontend is intentionally static and dependency-light to keep the portfolio demo fast, secure and easy to deploy.
+
+## Operations
+
+See [OPERATIONS.md](OPERATIONS.md) for GitFlow, Vercel secrets and security pipeline details.
