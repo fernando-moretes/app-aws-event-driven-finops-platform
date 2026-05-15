@@ -1,0 +1,12 @@
+flowchart LR
+  Accounts[Accounts Service] --> Bus[EventBridge Domain Bus]
+  Payments[Payments Service] --> Bus
+  Fraud[Fraud Service] --> Bus
+  Bus --> SQS1[Ledger Queue]
+  Bus --> SQS2[Notification Queue]
+  Bus --> Analytics[Analytics Stream]
+  SQS1 --> Ledger[Ledger Consumer]
+  SQS2 --> Notify[Notification Consumer]
+  Analytics --> Lake[Data Lake]
+  Ledger --> Obs[CloudWatch/X-Ray]
+  Notify --> Obs
