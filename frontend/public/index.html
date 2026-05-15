@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio frontend for an event-driven AWS banking platform with FinOps, security, observability, and domain event architecture."
+    />
+    <title>AWS Event-Driven FinOps Platform</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav" aria-label="Primary">
+        <span class="brand">Event FinOps</span>
+        <a href="https://github.com/fernandofatech/aws-event-driven-finops-platform">GitHub</a>
+      </nav>
+      <section class="hero-grid">
+        <div>
+          <p class="eyebrow">AWS Solution Architecture</p>
+          <h1>AWS Event-Driven FinOps Platform</h1>
+          <p class="lead">
+            A banking reference architecture that turns domain events, cost signals,
+            service selection, and operational controls into an architecture decision system.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/fernandofatech/aws-event-driven-finops-platform">View repository</a>
+            <a class="button" href="../docs/architecture.md">Architecture docs</a>
+          </div>
+        </div>
+        <div class="signal-panel" aria-label="Architecture signal board">
+          <div><strong>EventBridge</strong><span>Domain routing</span></div>
+          <div><strong>SQS</strong><span>Backpressure</span></div>
+          <div><strong>Kinesis</strong><span>Ordered streams</span></div>
+          <div><strong>FinOps</strong><span>Cost-aware choices</span></div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>Architecture Focus</h2>
+        <div class="cards">
+          <article>
+            <h3>Domain Events</h3>
+            <p>Maps banking flows such as Pix payments, fraud scoring, and statements into explicit event contracts.</p>
+          </article>
+          <article>
+            <h3>FinOps Decisions</h3>
+            <p>Compares EventBridge, SQS, Kinesis, MSK, Lambda, and Step Functions through cost and workload trade-offs.</p>
+          </article>
+          <article>
+            <h3>Security</h3>
+            <p>Documents identity boundaries, encryption posture, auditability, and event governance for regulated workloads.</p>
+          </article>
+          <article>
+            <h3>Observability</h3>
+            <p>Connects CloudWatch, X-Ray, event lineage, and operational metrics to measurable platform health.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="band">
+        <div>
+          <h2>Portfolio Outcomes</h2>
+          <p>
+            The repo demonstrates architecture storytelling, automated validation, event-driven design,
+            and FinOps-aware AWS service selection in a concise reference implementation.
+          </p>
+        </div>
+        <ul class="checks">
+          <li>Python tests for decision logic</li>
+          <li>Automated dependency and security scanning</li>
+          <li>Static frontend deployable to Vercel</li>
+          <li>GitFlow-ready documentation and operations guide</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
