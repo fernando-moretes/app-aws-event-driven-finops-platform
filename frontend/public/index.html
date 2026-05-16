@@ -1,81 +1,122 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Portfolio frontend for an event-driven AWS banking platform with FinOps, security, observability, and domain event architecture."
-    />
-    <title>AWS Event-Driven FinOps Platform</title>
+    <meta name="description" content="Arquitetura bancaria orientada a eventos que conecta EventBridge, SQS, Kinesis, MSK, observabilidade, seguranca e decisoes FinOps. Event-driven banking reference architecture connecting EventBridge, SQS, Kinesis, MSK, observability, security, and FinOps decisions." />
+    <meta name="keywords" content="AWS, EventBridge, SQS, Kinesis, MSK, FinOps, Banking, Event-driven Architecture, Fernando Francisco Azevedo, moretes.com, arquitetura de solucoes" />
+    <meta name="author" content="Fernando Francisco Azevedo" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://finops.moretes.com/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://finops.moretes.com/#pt" />
+    <link rel="alternate" hreflang="en" href="https://finops.moretes.com/#en" />
+    <link rel="me" href="https://www.linkedin.com/in/fernando-francisco-azevedo/" />
+    <link rel="me" href="https://github.com/fernandofatech" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Fernando Moretes Architecture Portfolio" />
+    <meta property="og:title" content="AWS Event-Driven FinOps Platform | Fernando Moretes" />
+    <meta property="og:description" content="Arquitetura bancaria orientada a eventos que conecta EventBridge, SQS, Kinesis, MSK, observabilidade, seguranca e decisoes FinOps. Event-driven banking reference architecture connecting EventBridge, SQS, Kinesis, MSK, observability, security, and FinOps decisions." />
+    <meta property="og:url" content="https://finops.moretes.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AWS Event-Driven FinOps Platform | Fernando Moretes" />
+    <meta name="twitter:description" content="Arquitetura bancaria orientada a eventos que conecta EventBridge, SQS, Kinesis, MSK, observabilidade, seguranca e decisoes FinOps. Event-driven banking reference architecture connecting EventBridge, SQS, Kinesis, MSK, observability, security, and FinOps decisions." />
+    <title>AWS Event-Driven FinOps Platform | Fernando Moretes</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="hero">
-      <nav class="nav" aria-label="Primary">
-        <span class="brand">Event FinOps</span>
-        <a href="https://github.com/fernandofatech/aws-event-driven-finops-platform">GitHub</a>
+    <div class="shell">
+      <nav class="nav" aria-label="Principal">
+        <a class="brand" href="https://fernando.moretes.com">Fernando Moretes</a>
+        <div class="nav__links">
+          <a href="https://github.com/fernandofatech/aws-event-driven-finops-platform">GitHub</a>
+          <a href="https://www.linkedin.com/in/fernando-francisco-azevedo/">LinkedIn</a>
+          <a href="https://fernando.moretes.com">Portfolio</a>
+        </div>
       </nav>
-      <section class="hero-grid">
-        <div>
-          <p class="eyebrow">AWS Solution Architecture</p>
-          <h1>AWS Event-Driven FinOps Platform</h1>
-          <p class="lead">
-            A banking reference architecture that turns domain events, cost signals,
-            service selection, and operational controls into an architecture decision system.
-          </p>
-          <div class="actions">
-            <a class="button primary" href="https://github.com/fernandofatech/aws-event-driven-finops-platform">View repository</a>
-            <a class="button" href="../docs/architecture.md">Architecture docs</a>
+
+      <main>
+        <section class="hero">
+          <div>
+            <p class="eyebrow">Event-Driven AWS + FinOps</p>
+            <h1>AWS Event-Driven FinOps Platform</h1>
+            <p class="lead">Arquitetura bancaria orientada a eventos que conecta EventBridge, SQS, Kinesis, MSK, observabilidade, seguranca e decisoes FinOps.</p>
+            <div class="lang-grid" aria-label="Resumo bilingue">
+              <article id="pt" class="lang-card">
+                <strong>Português</strong>
+                <p>Arquitetura bancaria orientada a eventos que conecta EventBridge, SQS, Kinesis, MSK, observabilidade, seguranca e decisoes FinOps.</p>
+              </article>
+              <article id="en" class="lang-card">
+                <strong>English</strong>
+                <p>Event-driven banking reference architecture connecting EventBridge, SQS, Kinesis, MSK, observability, security, and FinOps decisions.</p>
+              </article>
+            </div>
+            <div class="actions">
+              <a class="button button--primary" href="https://github.com/fernandofatech/aws-event-driven-finops-platform">Ver repositório / View repo</a>
+              <a class="button" href="https://github.com/fernandofatech/aws-event-driven-finops-platform/blob/main/docs/architecture.md">Documentação / Docs</a>
+              <a class="button" href="https://fernando.moretes.com">Perfil profissional</a>
+            </div>
           </div>
-        </div>
-        <div class="signal-panel" aria-label="Architecture signal board">
-          <div><strong>EventBridge</strong><span>Domain routing</span></div>
-          <div><strong>SQS</strong><span>Backpressure</span></div>
-          <div><strong>Kinesis</strong><span>Ordered streams</span></div>
-          <div><strong>FinOps</strong><span>Cost-aware choices</span></div>
-        </div>
-      </section>
-    </header>
+          <aside class="panel" aria-label="Sinais de portfolio">
+            <p class="panel__label">Portfolio signal</p>
+            <strong>PoC publica para arquitetura de soluções, AWS, IA e engenharia DevSecOps.</strong>
+            <ul>
+              <li>EventBridge</li>
+              <li>SQS</li>
+              <li>Kinesis</li>
+              <li>MSK</li>
+              <li>FinOps</li>
+              <li>Banking</li>
+            </ul>
+          </aside>
+        </section>
 
-    <main>
-      <section class="section">
-        <h2>Architecture Focus</h2>
-        <div class="cards">
-          <article>
-            <h3>Domain Events</h3>
-            <p>Maps banking flows such as Pix payments, fraud scoring, and statements into explicit event contracts.</p>
-          </article>
-          <article>
-            <h3>FinOps Decisions</h3>
-            <p>Compares EventBridge, SQS, Kinesis, MSK, Lambda, and Step Functions through cost and workload trade-offs.</p>
-          </article>
-          <article>
-            <h3>Security</h3>
-            <p>Documents identity boundaries, encryption posture, auditability, and event governance for regulated workloads.</p>
-          </article>
-          <article>
-            <h3>Observability</h3>
-            <p>Connects CloudWatch, X-Ray, event lineage, and operational metrics to measurable platform health.</p>
-          </article>
-        </div>
-      </section>
+        <section class="section" aria-labelledby="focus-title">
+          <div class="section__head">
+            <h2 id="focus-title">Arquitetura que mostra pensamento de solução.</h2>
+            <p>Conteúdo desenhado para entrevistas, discovery técnico, revisão executiva e demonstração prática de boas práticas em cloud e IA.</p>
+          </div>
+          <div class="cards">
+            <article class="card">
+              <span>01</span>
+              <h3>Eventos de dominio</h3>
+              <p>Contratos para Pix, fraude, extratos e fluxos de plataforma bancaria.</p>
+            </article>
+            <article class="card">
+              <span>02</span>
+              <h3>Escolha de servicos</h3>
+              <p>Comparacao de custo, latencia, throughput e complexidade operacional.</p>
+            </article>
+            <article class="card">
+              <span>03</span>
+              <h3>Operacao mensuravel</h3>
+              <p>Metricas, rastreabilidade, alarmes e criterios de confiabilidade.</p>
+            </article>
+          </div>
+        </section>
 
-      <section class="band">
-        <div>
-          <h2>Portfolio Outcomes</h2>
-          <p>
-            The repo demonstrates architecture storytelling, automated validation, event-driven design,
-            and FinOps-aware AWS service selection in a concise reference implementation.
-          </p>
-        </div>
-        <ul class="checks">
-          <li>Python tests for decision logic</li>
-          <li>Automated dependency and security scanning</li>
-          <li>Static frontend deployable to Vercel</li>
-          <li>GitFlow-ready documentation and operations guide</li>
-        </ul>
-      </section>
-    </main>
+        <section class="section" aria-labelledby="proof-title">
+          <div class="section__head">
+            <h2 id="proof-title">Evidências técnicas / Technical proof</h2>
+            <p>Projetos com documentação, automação, testes e superfície pública pronta para avaliação rápida por recrutadores, líderes técnicos e times de arquitetura.</p>
+          </div>
+          <ul class="proof">
+            <li>EventBridge</li>
+            <li>FinOps</li>
+            <li>Observability</li>
+            <li>Security</li>
+            <li>DevSecOps</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>
+          Fernando Francisco Azevedo ·
+          <a href="https://www.linkedin.com/in/fernando-francisco-azevedo/">LinkedIn</a> ·
+          <a href="https://github.com/fernandofatech">GitHub</a> ·
+          <a href="https://fernando.moretes.com">fernando.moretes.com</a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>

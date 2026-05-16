@@ -2,6 +2,17 @@
 
 A realistic reference architecture for an event-driven banking platform on AWS, combining domain events, service selection, FinOps, security and observability.
 
+## Live portfolio / Portfolio ao vivo
+
+- **Production:** [AWS Event-Driven FinOps Platform](https://finops.moretes.com)
+- **Documentation:** [Project docs](docs/architecture.md)
+- **GitHub:** [fernandofatech/aws-event-driven-finops-platform](https://github.com/fernandofatech/aws-event-driven-finops-platform)
+- **Author:** [Fernando Francisco Azevedo](https://fernando.moretes.com) · [LinkedIn](https://www.linkedin.com/in/fernando-francisco-azevedo/) · [GitHub](https://github.com/fernandofatech)
+
+This public repository is part of a bilingual portfolio focused on solution architecture, AWS, AI, MCP/tooling, DevSecOps, and production-ready engineering practices.
+
+Este repositório público faz parte de um portfólio bilíngue focado em arquitetura de soluções, AWS, IA, MCP/tools, DevSecOps e boas práticas de engenharia para produção.
+
 ## Scenario
 
 The fictional platform models a banking event mesh with events such as:
