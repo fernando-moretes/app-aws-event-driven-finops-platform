@@ -4,7 +4,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: app-aws-event-driven-finops-platform
-  description: Bilingual event-driven AWS banking platform with FinOps-aware service selection, security, observability and Vercel frontend.
+  description: "Bilingual event-driven AWS banking platform with FinOps-aware service selection, security, observability and Vercel frontend."
   annotations:
     github.com/project-slug: fernando-moretes/app-aws-event-driven-finops-platform
     backstage.io/source-location: url:https://github.com/fernando-moretes/app-aws-event-driven-finops-platform
@@ -17,7 +17,9 @@ metadata:
       title: SonarQube
     - url: https://defectdojo.home.lab/product?name=app-aws-event-driven-finops-platform
       title: DefectDojo
-  tags: [website, ci-python.yml]
+  # tags so aceitam [a-z0-9-]: ci-python.yml (ci-node.yml) tem ponto e reprovava
+  # todo componente na policy check do Backstage.
+  tags: [website, python]
 spec:
   type: website
   lifecycle: production
