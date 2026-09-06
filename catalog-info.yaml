@@ -1,0 +1,25 @@
+# Gerado por fernando-moretes/platform. Não edite aqui: mude no orquestrador e
+# rode `make rollout`. É o que o Backstage (backstage.home.lab) lê deste repo.
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: app-aws-event-driven-finops-platform
+  description: Bilingual event-driven AWS banking platform with FinOps-aware service selection, security, observability and Vercel frontend.
+  annotations:
+    github.com/project-slug: fernando-moretes/app-aws-event-driven-finops-platform
+    backstage.io/source-location: url:https://github.com/fernando-moretes/app-aws-event-driven-finops-platform
+    sonarqube.org/project-key: app-aws-event-driven-finops-platform
+  links:
+    - url: https://github.com/fernando-moretes/app-aws-event-driven-finops-platform/actions
+      title: Actions
+      icon: github
+    - url: https://sonarqube.home.lab/dashboard?id=app-aws-event-driven-finops-platform
+      title: SonarQube
+    - url: https://defectdojo.home.lab/product?name=app-aws-event-driven-finops-platform
+      title: DefectDojo
+  tags: [website, ci-python.yml]
+spec:
+  type: website
+  lifecycle: production
+  owner: group:plataforma
+  system: homelab
