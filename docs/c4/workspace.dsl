@@ -7,12 +7,16 @@
  */
 workspace "app-aws-event-driven-finops-platform" "Bilingual event-driven AWS banking platform with FinOps-aware service selection, security, observability and Vercel frontend." {
 
+    configuration {
+        scope softwaresystem
+    }
+
     model {
         usuario = person "Usuário"
         sistema = softwareSystem "app-aws-event-driven-finops-platform" "Bilingual event-driven AWS banking platform with FinOps-aware service selection, security, observability and Vercel frontend." {
             app = container "Aplicação" "Descreva o que roda aqui" "ci-python.yml"
         }
-        usuario -> sistema.app "Usa"
+        usuario -> sistema.app "Usa" "HTTPS"
     }
 
     views {
@@ -25,9 +29,19 @@ workspace "app-aws-event-driven-finops-platform" "Bilingual event-driven AWS ban
             autoLayout lr
         }
         styles {
-            element "Person" { shape person; background #08427b; color #ffffff }
-            element "Software System" { background #1168bd; color #ffffff }
-            element "Container" { background #438dd5; color #ffffff }
+            element "Person" {
+                shape person
+                background #08427b
+                color #ffffff
+            }
+            element "Software System" {
+                background #1168bd
+                color #ffffff
+            }
+            element "Container" {
+                background #438dd5
+                color #ffffff
+            }
         }
     }
 }
