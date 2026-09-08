@@ -1,0 +1,19 @@
+# Gerado por fernando-moretes/platform (TechDocs do Backstage). O conteudo e do
+# repositorio: escreva em docs/*.md; este arquivo so lista as paginas.
+site_name: app-aws-event-driven-finops-platform
+site_description: "Bilingual event-driven AWS banking platform with FinOps-aware service selection, security, observability and Vercel frontend."
+repo_url: https://github.com/fernando-moretes/app-aws-event-driven-finops-platform
+edit_uri: edit/main/docs/
+docs_dir: docs
+plugins:
+  - techdocs-core
+nav:
+  - Visão geral: index.md
+  - Arquitetura: arquitetura.md
+  - Operação: operacao.md
+  - API: api.md
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
